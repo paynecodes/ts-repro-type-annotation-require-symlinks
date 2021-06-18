@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "lib/esm",
+    "jsxImportSource": "@emotion/react",
+    "jsx": "react-jsx",
+    "rootDirs": [
+      "src/"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "types": [
+      "heft-jest"
+    ],
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "skipLibCheck": true, // Skip type checking of declaration files. Enabling this setting is recommended. (For now)
+    "lib": [
+      "ES5",
+      "ESNext",
+      "ES2015.Collection",
+      "ES2015.Promise",
+      "ES2015.Iterable",
+      "DOM"
+    ],
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "types/**/*.ts"
+  ],
+}
